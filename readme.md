@@ -105,7 +105,6 @@ im_out = cv2.warpPerspective(im_src, h, (im_dst.shape[1], im_dst.shape[0]))
 
 Now, we'll need a mask to copy our source image into the destination one.
 
-
 ```python
 mask = np.zeros((imgH, imgW), dtype="uint8")
 cv2.fillConvexPoly(mask, pts_dst.astype("int32"), (255, 255, 255), cv2.LINE_AA) # LINE_AA, antialiasing, so they're thin and smooth
@@ -116,6 +115,10 @@ cv2.fillConvexPoly(mask, pts_dst.astype("int32"), (255, 255, 255), cv2.LINE_AA) 
 maskScaled = mask.copy() / 255.0 # First we divide each color value and set them to 1.0 or 0.0
 maskScaled = np.dstack([maskScaled] * 3) # Then we triple the dimensions of the mask so it can match the RGB image
 ```
+
+Here it goes:
+
+![image](https://github.com/RomeroRodriguezD/homography-with-OpenCV/assets/105886661/231d330b-61af-4257-bad6-34ad3e812a29)
 
 **Copying the warped source image into the input image**
 
