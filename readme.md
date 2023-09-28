@@ -69,10 +69,13 @@ imgH, imgW = im_dst.shape[:2]
 plt.imshow(cv2.cvtColor(im_dst, cv2.COLOR_BGR2RGB))
 #plt.axis('off')  # Disable axis. I'll rather keep it just to see the coordinates
 
-# Conectar la función de manejo de clics del mouse al evento 'button_press_event'
+# Connection the "on click" event to tracj coordinates.
 plt.connect('button_press_event', click_event_NB)
 
 ```
+
+![image](https://github.com/RomeroRodriguezD/homography-with-OpenCV/assets/105886661/86cb7848-8ad6-437c-9ae6-2955091c6965)
+
 
 **Checking the stored coordinates and turning them into Numpy array.**
 
