@@ -1,4 +1,4 @@
-## Homography with OpenCV ##
+# Homography with OpenCV #
 
 Using perspective transformation to alter images.
 
