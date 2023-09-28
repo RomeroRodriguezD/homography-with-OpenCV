@@ -3,65 +3,6 @@
 Using perspective transformation to alter images.
 
 
-```python
-# Main imports
-import cv2
-import numpy as np
-```
-
-    Collecting google.colab
-      Using cached google-colab-1.0.0.tar.gz (72 kB)
-      Installing build dependencies: started
-      Installing build dependencies: finished with status 'done'
-      Getting requirements to build wheel: started
-      Getting requirements to build wheel: finished with status 'done'
-      Preparing metadata (pyproject.toml): started
-      Preparing metadata (pyproject.toml): finished with status 'done'
-    Collecting google-auth~=1.4.0 (from google.colab)
-      Using cached google_auth-1.4.2-py2.py3-none-any.whl (64 kB)
-    Collecting ipykernel~=4.6.0 (from google.colab)
-      Using cached ipykernel-4.6.1-py3-none-any.whl (104 kB)
-    Collecting ipython~=5.5.0 (from google.colab)
-      Using cached ipython-5.5.0-py3-none-any.whl (758 kB)
-    Collecting notebook~=5.2.0 (from google.colab)
-      Using cached notebook-5.2.2-py2.py3-none-any.whl (8.0 MB)
-    Collecting six~=1.12.0 (from google.colab)
-      Using cached six-1.12.0-py2.py3-none-any.whl (10 kB)
-    Collecting pandas~=0.24.0 (from google.colab)
-      Using cached pandas-0.24.2.tar.gz (11.8 MB)
-      Installing build dependencies: started
-      Installing build dependencies: finished with status 'done'
-      Getting requirements to build wheel: started
-      Getting requirements to build wheel: finished with status 'done'
-      Installing backend dependencies: started
-      Installing backend dependencies: finished with status 'done'
-      Preparing metadata (pyproject.toml): started
-      Preparing metadata (pyproject.toml): finished with status 'error'
-    
-
-      error: subprocess-exited-with-error
-      
-      Preparing metadata (pyproject.toml) did not run successfully.
-      exit code: 1
-      
-      [4 lines of output]
-      <string>:12: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
-      error in pandas setup command: 'install_requires' must be a string or list of strings containing valid project/version requirement specifiers; Expected end or semicolon (after version specifier)
-          pytz >= 2011k
-               ~~~~~~~^
-      [end of output]
-      
-      note: This error originates from a subprocess, and is likely not a problem with pip.
-    error: metadata-generation-failed
-    
-    Encountered error while generating package metadata.
-    
-    See above for output.
-    
-    note: This is an issue with the package mentioned above, not pip.
-    hint: See above for details.
-    
-
 **Creating the source matrix**
 
 Since this one is all about height and shape, we won't need to define the points manually on this one.
