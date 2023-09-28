@@ -42,7 +42,7 @@ This one will require to select the 4 corner coordinates manually, following thi
 <br>
 -Bottom left.
 
-For this we can use a mouse callback that will store up to 4 points.
+For this we can use a mouse callback that will store up to 4 points. Disclaimer: Only notebook version of matplotlib allows you to catch mouse events, so "%matplotlib notebook" it's a must.
 
 
 ```python
