@@ -1,6 +1,6 @@
 # Homography with OpenCV #
 
-Using perspective transformation to put an image inside another, regardless of the orientation.
+Using perspective transformation and masking to put an image inside another. This could be easily done by catching the reference points of both images and then applying the right operations.
 
 **Creating the source matrix**
 
