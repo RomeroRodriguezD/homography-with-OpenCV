@@ -28,8 +28,11 @@ pts_src = np.array([[0, 0], [srcW, 0], [srcW, srcH], [0, srcH]])
 This one will require to select the 4 corner coordinates manually, following this order: 
 
 -Top left.
+<br>
 -Top right.
+<br>
 -Bottom right.
+<br>
 -Bottom left.
 
 For this we can use a mouse callback that will store up to 4 points.
