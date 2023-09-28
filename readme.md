@@ -9,7 +9,7 @@ Using perspective transformation and masking to put an image inside another. Thi
 <br>
 -Finally, we'll need a mask that will be used to mix both images.
 
-**Creating the source matrix**
+**Creating the source matrix.**
 
 Since this one is all about height and shape, we won't need to define the points manually on this one.
 
@@ -84,7 +84,7 @@ plt.connect('button_press_event', click_event_NB)
 ![image](https://github.com/RomeroRodriguezD/homography-with-OpenCV/assets/105886661/86cb7848-8ad6-437c-9ae6-2955091c6965)
 
 
-**Checking the stored coordinates and turning them into Numpy array.**
+**Checking the stored coordinates and turning them into Numpy array**
 
 
 ```python
