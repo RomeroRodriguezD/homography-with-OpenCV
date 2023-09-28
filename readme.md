@@ -1,7 +1,6 @@
 # Homography with OpenCV #
 
-Using perspective transformation to alter images.
-
+Using perspective transformation to put an image inside another, regardless of the orientation.
 
 **Creating the source matrix**
 
