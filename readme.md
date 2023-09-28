@@ -72,7 +72,6 @@ plt.connect('button_press_event', click_event_NB)
 
 ```
 
-
 **Checking the stored coordinates and turning them into Numpy array.**
 
 
@@ -121,8 +120,11 @@ maskScaled = np.dstack([maskScaled] * 3) # Then we triple the dimensions of the 
 This is a three steps process:
 
 1-Multiplying the warped image (the one that will be placed inside the other) and the scaled mask, together.
+<br>
 2-Multiplying the original destination image with the scaled mask.
+<br>
 3-Adding both as output, and casting the result into "int8".
+<br>
 
 Multiplications on the warped image are done so it fills the white space of the mask, while multiplications on the destination image makes it fill the black space of the mask.
 
